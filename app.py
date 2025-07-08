@@ -1,6 +1,6 @@
 import streamlit as st # type: ignore
 import pandas as pd
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay   # type: ignore
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay 
 from matplotlib import pyplot as plt    
 import seaborn as sns # type: ignore
 import tensorflow as tf
