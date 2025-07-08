@@ -1,12 +1,7 @@
 import streamlit as st # type: ignore
 import pandas as pd
-from quitar_outliers import quitar_outliers
-from boxplot import boxplot
-from separar_variables import separar_variables
-from regresion_lineal import linear_regresion
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay   # type: ignore
 from matplotlib import pyplot as plt    
-from red_neuronal import red_neuronal
 import seaborn as sns # type: ignore
 import tensorflow as tf
 import tensorflow.keras as kr                           #type: ignore
@@ -29,7 +24,7 @@ import pandas as pd
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay                # type: ignore
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score # type: ignore
 from sklearn.preprocessing import StandardScaler # type: ignore
-from quitar_outliers import quitar_outliers
+
 def separar_variables(data):
     df = data
     df_numericas = df.select_dtypes(include=['int64', 'float64'])
